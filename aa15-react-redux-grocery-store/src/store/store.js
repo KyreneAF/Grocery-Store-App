@@ -1,7 +1,8 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
+import producerReducer from './produce';
 
 const rootReducer = combineReducers({
-
+  produce: producerReducer
 });
 
 let enhancer;
